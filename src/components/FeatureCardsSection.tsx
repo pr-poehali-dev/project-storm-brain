@@ -3,76 +3,82 @@ import { ChevronRight, Plus } from "lucide-react"
 
 const featureCards = [
   {
-    title: "Планирование спринтов",
+    title: "Drag & Drop блоки",
     illustration: (
-      <div className="relative w-full h-full flex items-center justify-center overflow-hidden rounded-lg">
-        <svg
-          width="100%"
-          height="100%"
-          viewBox="0 0 791 669"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-          className="max-w-full max-h-full"
-        >
-          <path
-            opacity="0.25"
-            d="M377.449 24.2664L22.1248 192.099C9.24419 198.183 1.16249 211.29 1.51081 225.531L10.925 610.428C11.5763 637.054 39.9132 653.778 63.5378 641.48L409.448 461.403C421.355 455.204 428.824 442.895 428.824 429.471V56.8179C428.824 30.407 401.33 12.9865 377.449 24.2664Z"
-            fill="#2C2C2C"
-            fillOpacity="0.8"
-            stroke="#424242"
-            strokeWidth="3"
-          />
-          <path
-            opacity="0.25"
-            d="M497.594 24.2664L142.269 192.099C129.389 198.183 121.307 211.29 121.655 225.531L131.07 610.428C131.721 637.054 160.058 653.778 183.682 641.48L529.592 461.403C541.5 455.204 548.969 442.895 548.969 429.471V56.8179C548.969 30.407 521.475 12.9865 497.594 24.2664Z"
-            fill="#2C2C2C"
-            fillOpacity="0.8"
-            stroke="#424242"
-            strokeWidth="3"
-          />
-          <path
-            opacity="0.25"
-            d="M617.738 24.2664L262.414 192.099C249.533 198.183 241.451 211.29 241.8 225.531L251.214 610.428C251.865 637.054 280.202 653.778 303.827 641.48L649.737 461.403C661.644 455.204 669.113 442.895 669.113 429.471V56.8179C669.113 30.407 641.619 12.9865 617.738 24.2664Z"
-            fill="#2C2C2C"
-            fillOpacity="0.8"
-            stroke="#424242"
-            strokeWidth="3"
-          />
-          <path
-            opacity="0.25"
-            d="M737.883 24.2664L382.558 192.099C369.678 198.183 361.596 211.29 361.944 225.531L371.358 610.428C372.01 637.054 400.347 653.778 423.971 641.48L769.881 461.403C781.789 455.204 789.258 442.895 789.258 429.471V56.8179C789.258 30.407 761.764 12.9865 737.883 24.2664Z"
-            fill="#2C2C2C"
-            fillOpacity="0.8"
-            stroke="#424242"
-            strokeWidth="3"
-          />
+      <div className="relative w-full h-full flex items-center justify-center overflow-hidden p-6 pt-10">
+        <svg width="100%" height="100%" viewBox="0 0 300 260" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="30" y="20" width="100" height="50" rx="8" fill="#27272A" stroke="#3F3F46" strokeWidth="1.5"/>
+          <text x="80" y="50" textAnchor="middle" fill="#A1A1AA" fontSize="12">Начало</text>
+          <rect x="160" y="20" width="110" height="50" rx="8" fill="#27272A" stroke="#3F3F46" strokeWidth="1.5"/>
+          <text x="215" y="50" textAnchor="middle" fill="#A1A1AA" fontSize="12">Авторизация</text>
+          <line x1="130" y1="45" x2="160" y2="45" stroke="#52525B" strokeWidth="1.5" strokeDasharray="4 2"/>
+          <polygon points="158,41 166,45 158,49" fill="#52525B"/>
+          <rect x="90" y="110" width="120" height="50" rx="8" fill="#1E1E2E" stroke="#6366F1" strokeWidth="1.5"/>
+          <text x="150" y="140" textAnchor="middle" fill="#818CF8" fontSize="12">Обработка</text>
+          <line x1="80" y1="70" x2="130" y2="110" stroke="#52525B" strokeWidth="1.5" strokeDasharray="4 2"/>
+          <polygon points="127,108 135,112 128,117" fill="#52525B"/>
+          <line x1="215" y1="70" x2="175" y2="110" stroke="#52525B" strokeWidth="1.5" strokeDasharray="4 2"/>
+          <polygon points="172,108 180,110 174,117" fill="#52525B"/>
+          <rect x="50" y="200" width="90" height="44" rx="8" fill="#27272A" stroke="#3F3F46" strokeWidth="1.5"/>
+          <text x="95" y="227" textAnchor="middle" fill="#A1A1AA" fontSize="12">Успех</text>
+          <rect x="165" y="200" width="90" height="44" rx="8" fill="#27272A" stroke="#3F3F46" strokeWidth="1.5"/>
+          <text x="210" y="227" textAnchor="middle" fill="#A1A1AA" fontSize="12">Ошибка</text>
+          <line x1="130" y1="160" x2="95" y2="200" stroke="#52525B" strokeWidth="1.5" strokeDasharray="4 2"/>
+          <polygon points="92,197 100,201 93,206" fill="#52525B"/>
+          <line x1="170" y1="160" x2="210" y2="200" stroke="#52525B" strokeWidth="1.5" strokeDasharray="4 2"/>
+          <polygon points="207,197 215,201 208,206" fill="#52525B"/>
         </svg>
       </div>
     ),
   },
   {
-    title: "Управление итерациями",
+    title: "Умные стрелки-соединители",
     illustration: (
-      <div className="relative w-full h-full flex items-center justify-center overflow-hidden">
-        <img
-          src="/images/speed-lines.png"
-          alt="Иллюстрация скорости"
-          className="w-full h-full object-cover"
-          style={{ filter: "invert(1)" }}
-        />
+      <div className="relative w-full h-full flex items-center justify-center overflow-hidden p-6 pt-10">
+        <svg width="100%" height="100%" viewBox="0 0 300 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="60" cy="60" r="36" fill="#1A1A2E" stroke="#6366F1" strokeWidth="1.5"/>
+          <text x="60" y="65" textAnchor="middle" fill="#818CF8" fontSize="11">API</text>
+          <circle cx="240" cy="60" r="36" fill="#1A2E1A" stroke="#22C55E" strokeWidth="1.5"/>
+          <text x="240" y="65" textAnchor="middle" fill="#4ADE80" fontSize="11">DB</text>
+          <circle cx="60" cy="180" r="36" fill="#2E1A1A" stroke="#F59E0B" strokeWidth="1.5"/>
+          <text x="60" y="185" textAnchor="middle" fill="#FCD34D" fontSize="11">UI</text>
+          <circle cx="240" cy="180" r="36" fill="#1A1A2E" stroke="#8B5CF6" strokeWidth="1.5"/>
+          <text x="240" y="185" textAnchor="middle" fill="#C4B5FD" fontSize="11">Cache</text>
+          <path d="M96 60 Q150 30 204 60" stroke="#6366F1" strokeWidth="1.5" fill="none" markerEnd="url(#arr1)"/>
+          <path d="M96 180 Q150 150 204 180" stroke="#8B5CF6" strokeWidth="1.5" fill="none" markerEnd="url(#arr2)"/>
+          <path d="M60 96 Q80 120 60 144" stroke="#F59E0B" strokeWidth="1.5" fill="none" markerEnd="url(#arr3)"/>
+          <path d="M240 96 Q220 120 240 144" stroke="#22C55E" strokeWidth="1.5" fill="none" markerEnd="url(#arr4)"/>
+          <defs>
+            <marker id="arr1" markerWidth="6" markerHeight="6" refX="3" refY="3" orient="auto"><polygon points="0,0 6,3 0,6" fill="#6366F1"/></marker>
+            <marker id="arr2" markerWidth="6" markerHeight="6" refX="3" refY="3" orient="auto"><polygon points="0,0 6,3 0,6" fill="#8B5CF6"/></marker>
+            <marker id="arr3" markerWidth="6" markerHeight="6" refX="3" refY="3" orient="auto"><polygon points="0,0 6,3 0,6" fill="#F59E0B"/></marker>
+            <marker id="arr4" markerWidth="6" markerHeight="6" refX="3" refY="3" orient="auto"><polygon points="0,0 6,3 0,6" fill="#22C55E"/></marker>
+          </defs>
+        </svg>
       </div>
     ),
   },
   {
-    title: "Когда важна точность",
+    title: "Экспорт и совместная работа",
     illustration: (
       <div className="relative w-full h-full flex items-center justify-center overflow-hidden">
         <img
-          src="/images/precision-workflow.png"
-          alt="Иллюстрация точного процесса"
+          src="/images/precision-grid.png"
+          alt="Сетка диаграммы"
           className="w-full h-full object-cover"
-          style={{ filter: "invert(1)" }}
+          style={{ filter: "invert(1) opacity(0.3)" }}
         />
+        <div className="absolute inset-0 flex items-center justify-center">
+          <div className="flex flex-col gap-3">
+            {["PNG", "SVG", "PDF"].map((fmt) => (
+              <div key={fmt} className="flex items-center gap-3 bg-zinc-800/80 border border-zinc-700 rounded-lg px-4 py-2">
+                <div className="w-2 h-2 rounded-full bg-indigo-400" />
+                <span className="text-zinc-300 text-sm font-mono">{fmt}</span>
+                <span className="text-zinc-500 text-xs ml-auto">↓</span>
+              </div>
+            ))}
+          </div>
+        </div>
       </div>
     ),
   },
@@ -105,7 +111,7 @@ export function FeatureCardsSection() {
                 lineHeight: 1.1,
               }}
             >
-              Создан для современных команд
+              Всё для работы с диаграммами
             </motion.h2>
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -115,10 +121,10 @@ export function FeatureCardsSection() {
               className="max-w-md"
             >
               <p className="text-zinc-400 leading-relaxed">
-                Orbit основан на практиках и принципах, которые отличают лучшие продуктовые команды:
-                фокус на главном, быстрое исполнение и внимание к качеству.{" "}
+                FlowBoard создан для тех, кто ценит скорость и ясность: создавайте блок-схемы, UML, флоучарты
+                и архитектурные диаграммы без лишних настроек.{" "}
                 <a href="#" className="text-white inline-flex items-center gap-1 hover:underline">
-                  Перейти на Orbit <ChevronRight className="w-4 h-4" />
+                  Попробовать бесплатно <ChevronRight className="w-4 h-4" />
                 </a>
               </p>
             </motion.div>
